@@ -20,6 +20,8 @@
 		09F17D162BBDD529006189E9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F17D152BBDD529006189E9 /* User.swift */; };
 		09F17D182BBDD921006189E9 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F17D172BBDD921006189E9 /* UserService.swift */; };
 		09F17D1B2BBDD9FF006189E9 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F17D1A2BBDD9FF006189E9 /* ProfileViewModel.swift */; };
+		09F17D1E2BBDEF96006189E9 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F17D1D2BBDEF96006189E9 /* ExploreViewModel.swift */; };
+		09F17D202BBDF107006189E9 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F17D1F2BBDF107006189E9 /* PreviewProvider.swift */; };
 		09F95BD22BB61EA000AFDD7F /* ThreadsCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F95BD12BB61EA000AFDD7F /* ThreadsCloneApp.swift */; };
 		09F95BD42BB61EA000AFDD7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F95BD32BB61EA000AFDD7F /* ContentView.swift */; };
 		09F95BD62BB61EA100AFDD7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09F95BD52BB61EA100AFDD7F /* Assets.xcassets */; };
@@ -49,6 +51,8 @@
 		09F17D152BBDD529006189E9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		09F17D172BBDD921006189E9 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		09F17D1A2BBDD9FF006189E9 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		09F17D1D2BBDEF96006189E9 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		09F17D1F2BBDF107006189E9 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		09F95BCE2BB61EA000AFDD7F /* ThreadsClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadsClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F95BD12BB61EA000AFDD7F /* ThreadsCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsCloneApp.swift; sourceTree = "<group>"; };
 		09F95BD32BB61EA000AFDD7F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -127,6 +131,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		09F17D1C2BBDEF83006189E9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				09F17D1D2BBDEF96006189E9 /* ExploreViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		09F95BC52BB61EA000AFDD7F = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +206,7 @@
 		09F95BE22BB61F5800AFDD7F /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				09F17D1F2BBDF107006189E9 /* PreviewProvider.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -287,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				09F95BF72BB62BC000AFDD7F /* View */,
+				09F17D1C2BBDEF83006189E9 /* ViewModel */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -468,6 +482,7 @@
 				09AC30CF2BBCD94000E29EAB /* RegistrationViewModel.swift in Sources */,
 				09F95BE92BB61FAE00AFDD7F /* LoginView.swift in Sources */,
 				09AC30D12BBCDA9800E29EAB /* AuthService.swift in Sources */,
+				09F17D202BBDF107006189E9 /* PreviewProvider.swift in Sources */,
 				09F95C132BB6480300AFDD7F /* EditProfileView.swift in Sources */,
 				09F95BD42BB61EA000AFDD7F /* ContentView.swift in Sources */,
 				09F17D182BBDD921006189E9 /* UserService.swift in Sources */,
@@ -476,6 +491,7 @@
 				09AC30D82BBCE30300E29EAB /* LoginViewModel.swift in Sources */,
 				09F95C0A2BB63FA800AFDD7F /* CircularProfileImageView.swift in Sources */,
 				09F95C0C2BB6400700AFDD7F /* UserCell.swift in Sources */,
+				09F17D1E2BBDEF96006189E9 /* ExploreViewModel.swift in Sources */,
 				09F95BFD2BB62BFE00AFDD7F /* CreateThreadView.swift in Sources */,
 				09F95BF12BB6272F00AFDD7F /* ThreadsTabView.swift in Sources */,
 				09AC30D52BBCDED300E29EAB /* ContentViewModel.swift in Sources */,
