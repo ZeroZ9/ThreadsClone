@@ -13,6 +13,8 @@
 		09AC30C72BBCD37C00E29EAB /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 09AC30C62BBCD37C00E29EAB /* FirebaseFirestoreSwift */; };
 		09AC30C92BBCD37C00E29EAB /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 09AC30C82BBCD37C00E29EAB /* FirebaseFunctions */; };
 		09AC30CB2BBCD37C00E29EAB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 09AC30CA2BBCD37C00E29EAB /* FirebaseStorage */; };
+		09AC30CF2BBCD94000E29EAB /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC30CE2BBCD94000E29EAB /* RegistrationViewModel.swift */; };
+		09AC30D12BBCDA9800E29EAB /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC30D02BBCDA9800E29EAB /* AuthService.swift */; };
 		09F95BD22BB61EA000AFDD7F /* ThreadsCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F95BD12BB61EA000AFDD7F /* ThreadsCloneApp.swift */; };
 		09F95BD42BB61EA000AFDD7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F95BD32BB61EA000AFDD7F /* ContentView.swift */; };
 		09F95BD62BB61EA100AFDD7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09F95BD52BB61EA100AFDD7F /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		09AC30BF2BBCD2EE00E29EAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		09AC30CE2BBCD94000E29EAB /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		09AC30D02BBCDA9800E29EAB /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		09F95BCE2BB61EA000AFDD7F /* ThreadsClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadsClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F95BD12BB61EA000AFDD7F /* ThreadsCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsCloneApp.swift; sourceTree = "<group>"; };
 		09F95BD32BB61EA000AFDD7F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +76,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09AC30CC2BBCD92700E29EAB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				09AC30CE2BBCD94000E29EAB /* RegistrationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		09AC30CD2BBCD92A00E29EAB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				09AC30D02BBCDA9800E29EAB /* AuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		09F95BC52BB61EA000AFDD7F = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +188,9 @@
 		09F95BE52BB61F8200AFDD7F /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				09AC30CD2BBCD92A00E29EAB /* Service */,
 				09F95BE72BB61FA200AFDD7F /* Views */,
+				09AC30CC2BBCD92700E29EAB /* ViewModels */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -404,7 +426,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				09F95BF52BB62B9B00AFDD7F /* FeedView.swift in Sources */,
+				09AC30CF2BBCD94000E29EAB /* RegistrationViewModel.swift in Sources */,
 				09F95BE92BB61FAE00AFDD7F /* LoginView.swift in Sources */,
+				09AC30D12BBCDA9800E29EAB /* AuthService.swift in Sources */,
 				09F95C132BB6480300AFDD7F /* EditProfileView.swift in Sources */,
 				09F95BD42BB61EA000AFDD7F /* ContentView.swift in Sources */,
 				09F95C072BB62D6D00AFDD7F /* ThreadCell.swift in Sources */,
