@@ -15,6 +15,8 @@
 		09AC30CB2BBCD37C00E29EAB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 09AC30CA2BBCD37C00E29EAB /* FirebaseStorage */; };
 		09AC30CF2BBCD94000E29EAB /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC30CE2BBCD94000E29EAB /* RegistrationViewModel.swift */; };
 		09AC30D12BBCDA9800E29EAB /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC30D02BBCDA9800E29EAB /* AuthService.swift */; };
+		09AC30D52BBCDED300E29EAB /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC30D42BBCDED300E29EAB /* ContentViewModel.swift */; };
+		09AC30D82BBCE30300E29EAB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC30D72BBCE30300E29EAB /* LoginViewModel.swift */; };
 		09F95BD22BB61EA000AFDD7F /* ThreadsCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F95BD12BB61EA000AFDD7F /* ThreadsCloneApp.swift */; };
 		09F95BD42BB61EA000AFDD7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F95BD32BB61EA000AFDD7F /* ContentView.swift */; };
 		09F95BD62BB61EA100AFDD7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09F95BD52BB61EA100AFDD7F /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 		09AC30BF2BBCD2EE00E29EAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		09AC30CE2BBCD94000E29EAB /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		09AC30D02BBCDA9800E29EAB /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		09AC30D42BBCDED300E29EAB /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		09AC30D72BBCE30300E29EAB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		09F95BCE2BB61EA000AFDD7F /* ThreadsClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadsClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F95BD12BB61EA000AFDD7F /* ThreadsCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsCloneApp.swift; sourceTree = "<group>"; };
 		09F95BD32BB61EA000AFDD7F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				09AC30CE2BBCD94000E29EAB /* RegistrationViewModel.swift */,
+				09AC30D72BBCE30300E29EAB /* LoginViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -90,6 +95,22 @@
 				09AC30D02BBCDA9800E29EAB /* AuthService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		09AC30D22BBCDEBA00E29EAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09F95BD32BB61EA000AFDD7F /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09AC30D32BBCDEBD00E29EAB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				09AC30D42BBCDED300E29EAB /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		09F95BC52BB61EA000AFDD7F = {
@@ -198,7 +219,8 @@
 		09F95BE62BB61F8B00AFDD7F /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				09F95BD32BB61EA000AFDD7F /* ContentView.swift */,
+				09AC30D22BBCDEBA00E29EAB /* View */,
+				09AC30D32BBCDEBD00E29EAB /* ViewModel */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -433,10 +455,12 @@
 				09F95BD42BB61EA000AFDD7F /* ContentView.swift in Sources */,
 				09F95C072BB62D6D00AFDD7F /* ThreadCell.swift in Sources */,
 				09F95C032BB62C3700AFDD7F /* ActivityView.swift in Sources */,
+				09AC30D82BBCE30300E29EAB /* LoginViewModel.swift in Sources */,
 				09F95C0A2BB63FA800AFDD7F /* CircularProfileImageView.swift in Sources */,
 				09F95C0C2BB6400700AFDD7F /* UserCell.swift in Sources */,
 				09F95BFD2BB62BFE00AFDD7F /* CreateThreadView.swift in Sources */,
 				09F95BF12BB6272F00AFDD7F /* ThreadsTabView.swift in Sources */,
+				09AC30D52BBCDED300E29EAB /* ContentViewModel.swift in Sources */,
 				09F95BD22BB61EA000AFDD7F /* ThreadsCloneApp.swift in Sources */,
 				09F95BEE2BB6250F00AFDD7F /* ThreadsTextFieldModifier.swift in Sources */,
 				09F95BF92BB62BC900AFDD7F /* ExploreView.swift in Sources */,
