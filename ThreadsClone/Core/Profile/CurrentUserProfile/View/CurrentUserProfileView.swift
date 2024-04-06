@@ -45,7 +45,7 @@ struct CurrentUserProfileView: View {
                 }
             }
             .sheet(isPresented: $showEditProfile, content: {
-                EditProfileView(viewModel: viewModel)
+                EditProfileView()
             })
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
