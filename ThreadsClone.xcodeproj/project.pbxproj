@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		09070E2F2BC2201200F26E8C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 09070E2E2BC2201200F26E8C /* Kingfisher */; };
+		097755642BC4400800F8940E /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097755632BC4400800F8940E /* Thread.swift */; };
+		097755672BC4410400F8940E /* CreateThreadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097755662BC4410400F8940E /* CreateThreadViewModel.swift */; };
+		097755692BC4412B00F8940E /* ThreadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097755682BC4412B00F8940E /* ThreadService.swift */; };
 		09AC30C02BBCD2EE00E29EAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09AC30BF2BBCD2EE00E29EAB /* GoogleService-Info.plist */; };
 		09AC30C32BBCD37C00E29EAB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 09AC30C22BBCD37C00E29EAB /* FirebaseAuth */; };
 		09AC30C52BBCD37C00E29EAB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 09AC30C42BBCD37C00E29EAB /* FirebaseFirestore */; };
@@ -49,6 +52,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		097755632BC4400800F8940E /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
+		097755662BC4410400F8940E /* CreateThreadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadViewModel.swift; sourceTree = "<group>"; };
+		097755682BC4412B00F8940E /* ThreadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadService.swift; sourceTree = "<group>"; };
 		09AC30BF2BBCD2EE00E29EAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		09AC30CE2BBCD94000E29EAB /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		09AC30D02BBCDA9800E29EAB /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -102,6 +108,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		097755652BC440F800F8940E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				097755662BC4410400F8940E /* CreateThreadViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		09AC30CC2BBCD92700E29EAB /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +244,7 @@
 			children = (
 				09F17D172BBDD921006189E9 /* UserService.swift */,
 				09FE3C4B2BC210C600D1A665 /* ImageUploader.swift */,
+				097755682BC4412B00F8940E /* ThreadService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -238,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				09F17D152BBDD529006189E9 /* User.swift */,
+				097755632BC4400800F8940E /* Thread.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -356,6 +372,7 @@
 			isa = PBXGroup;
 			children = (
 				09F95BFB2BB62BF300AFDD7F /* View */,
+				097755652BC440F800F8940E /* ViewModel */,
 			);
 			path = ThreadCreation;
 			sourceTree = "<group>";
@@ -530,6 +547,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09F95BF52BB62B9B00AFDD7F /* FeedView.swift in Sources */,
+				097755642BC4400800F8940E /* Thread.swift in Sources */,
 				09AC30CF2BBCD94000E29EAB /* RegistrationViewModel.swift in Sources */,
 				09F95BE92BB61FAE00AFDD7F /* LoginView.swift in Sources */,
 				09AC30D12BBCDA9800E29EAB /* AuthService.swift in Sources */,
@@ -542,6 +560,7 @@
 				09F17D2A2BBE2E14006189E9 /* UserContentListView.swift in Sources */,
 				09F95C032BB62C3700AFDD7F /* ActivityView.swift in Sources */,
 				09AC30D82BBCE30300E29EAB /* LoginViewModel.swift in Sources */,
+				097755672BC4410400F8940E /* CreateThreadViewModel.swift in Sources */,
 				09F95C0A2BB63FA800AFDD7F /* CircularProfileImageView.swift in Sources */,
 				09F95C0C2BB6400700AFDD7F /* UserCell.swift in Sources */,
 				09F17D1E2BBDEF96006189E9 /* ExploreViewModel.swift in Sources */,
@@ -559,6 +578,7 @@
 				09F95BEB2BB623FA00AFDD7F /* RegistrationView.swift in Sources */,
 				09F95C0F2BB6427600AFDD7F /* ProfileThreadFiler.swift in Sources */,
 				09F17D162BBDD529006189E9 /* User.swift in Sources */,
+				097755692BC4412B00F8940E /* ThreadService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
