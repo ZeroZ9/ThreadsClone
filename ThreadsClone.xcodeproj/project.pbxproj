@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		09070E2F2BC2201200F26E8C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 09070E2E2BC2201200F26E8C /* Kingfisher */; };
+		095C71CB2BC4A02700688527 /* ContentActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095C71CA2BC4A02700688527 /* ContentActionButtonView.swift */; };
+		095C71CF2BC4A0A700688527 /* ContentActionButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095C71CE2BC4A0A700688527 /* ContentActionButtonViewModel.swift */; };
 		097755642BC4400800F8940E /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097755632BC4400800F8940E /* Thread.swift */; };
 		097755672BC4410400F8940E /* CreateThreadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097755662BC4410400F8940E /* CreateThreadViewModel.swift */; };
 		097755692BC4412B00F8940E /* ThreadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097755682BC4412B00F8940E /* ThreadService.swift */; };
@@ -55,6 +57,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		095C71CA2BC4A02700688527 /* ContentActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentActionButtonView.swift; sourceTree = "<group>"; };
+		095C71CE2BC4A0A700688527 /* ContentActionButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentActionButtonViewModel.swift; sourceTree = "<group>"; };
 		097755632BC4400800F8940E /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
 		097755662BC4410400F8940E /* CreateThreadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadViewModel.swift; sourceTree = "<group>"; };
 		097755682BC4412B00F8940E /* ThreadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadService.swift; sourceTree = "<group>"; };
@@ -114,6 +118,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		095C71C82BC49FF900688527 /* Threads */ = {
+			isa = PBXGroup;
+			children = (
+				095C71CD2BC4A09300688527 /* View */,
+				095C71CC2BC4A08E00688527 /* ViewModel */,
+			);
+			path = Threads;
+			sourceTree = "<group>";
+		};
+		095C71C92BC49FFD00688527 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				09F95C092BB63FA800AFDD7F /* CircularProfileImageView.swift */,
+				09F95C0B2BB6400700AFDD7F /* UserCell.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		095C71CC2BC4A08E00688527 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				095C71CE2BC4A0A700688527 /* ContentActionButtonViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		095C71CD2BC4A09300688527 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09F95C062BB62D6D00AFDD7F /* ThreadCell.swift */,
+				095C71CA2BC4A02700688527 /* ContentActionButtonView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		097755652BC440F800F8940E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -456,9 +495,8 @@
 		09F95C082BB63F8300AFDD7F /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				09F95C062BB62D6D00AFDD7F /* ThreadCell.swift */,
-				09F95C092BB63FA800AFDD7F /* CircularProfileImageView.swift */,
-				09F95C0B2BB6400700AFDD7F /* UserCell.swift */,
+				095C71C92BC49FFD00688527 /* Users */,
+				095C71C82BC49FF900688527 /* Threads */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -579,6 +617,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				095C71CB2BC4A02700688527 /* ContentActionButtonView.swift in Sources */,
 				09F95BF52BB62B9B00AFDD7F /* FeedView.swift in Sources */,
 				097755642BC4400800F8940E /* Thread.swift in Sources */,
 				09AC30CF2BBCD94000E29EAB /* RegistrationViewModel.swift in Sources */,
@@ -598,6 +637,7 @@
 				097755672BC4410400F8940E /* CreateThreadViewModel.swift in Sources */,
 				09F95C0A2BB63FA800AFDD7F /* CircularProfileImageView.swift in Sources */,
 				09F95C0C2BB6400700AFDD7F /* UserCell.swift in Sources */,
+				095C71CF2BC4A0A700688527 /* ContentActionButtonViewModel.swift in Sources */,
 				09F17D1E2BBDEF96006189E9 /* ExploreViewModel.swift in Sources */,
 				0977556C2BC44DAF00F8940E /* FeedViewModel.swift in Sources */,
 				09F95BFD2BB62BFE00AFDD7F /* CreateThreadView.swift in Sources */,
