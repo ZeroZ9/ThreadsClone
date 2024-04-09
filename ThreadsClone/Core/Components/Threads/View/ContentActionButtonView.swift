@@ -20,31 +20,40 @@ struct ContentActionButtonView: View {
     }
     
     var body: some View {
-        HStack(spacing: 16){
-            Button(action: {
-                handleLikeTapped()
-            }, label: {
-                Image(systemName: didLike ? "heart.fill" : "heart")
-                    .foregroundStyle(didLike ? .red : .black)
-            })
-            
-            Button(action: {
+        VStack(alignment: .leading){
+            HStack(spacing: 16){
+                Button(action: {
+                    handleLikeTapped()
+                }, label: {
+                    Image(systemName: didLike ? "heart.fill" : "heart")
+                        .foregroundStyle(didLike ? .red : .black)
+                })
                 
-            }, label: {
-                Image(systemName: "bubble.right")
-            })
-            
-            Button(action: {
+                Button(action: {
+                    
+                }, label: {
+                    Image(systemName: "bubble.right")
+                })
                 
-            }, label: {
-                Image(systemName: "arrow.rectanglepath")
-            })
-            
-            Button(action: {
+                Button(action: {
+                    
+                }, label: {
+                    Image(systemName: "arrow.rectanglepath")
+                })
                 
-            }, label: {
-                Image(systemName: "paperplane")
-            })
+                Button(action: {
+                    
+                }, label: {
+                    Image(systemName: "paperplane")
+                })
+            }
+            
+            if viewModel.thread.likes > 0 {
+                Text("\(viewModel.thread.likes) likes")
+                    .font(.caption)
+                    .foregroundStyle(.gray)
+                    .padding(.vertical, 4)
+            }
         }
         .foregroundStyle(.black)
         .padding(.vertical, 8)
@@ -53,7 +62,7 @@ struct ContentActionButtonView: View {
     func handleLikeTapped() {
         Task{
             if didLike {
-                viewModel.unlikeThread()
+                try await viewModel.unlikeThread()
             } else {
                 try await viewModel.likeThread()
             }

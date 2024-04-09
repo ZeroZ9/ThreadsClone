@@ -14,6 +14,9 @@ class ContentActionButtonViewModel {
     
     init(thread: Thread) {
         self.thread = thread
+        Task {
+            try await checkIfUserLikedThread()
+        }
     }
     
     func likeThread() async throws {
@@ -22,7 +25,18 @@ class ContentActionButtonViewModel {
         self.thread.likes += 1
     }
     
-    func unlikeThread() {
+    func unlikeThread() async throws {
+        try await ThreadService.unlikeThread(thread)
         self.thread.didLike = false
+        self.thread.likes -= 1
+    }
+    
+    func checkIfUserLikedThread() async throws {
+        let didLike = try await ThreadService.checkIfUserLikedThread(thread)
+        
+        // only execute if therad has been liked
+        if didLike {
+            self.thread.didLike = true
+        }
     }
 }
