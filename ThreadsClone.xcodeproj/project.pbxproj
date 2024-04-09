@@ -10,6 +10,7 @@
 		09070E2F2BC2201200F26E8C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 09070E2E2BC2201200F26E8C /* Kingfisher */; };
 		095C71CB2BC4A02700688527 /* ContentActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095C71CA2BC4A02700688527 /* ContentActionButtonView.swift */; };
 		095C71CF2BC4A0A700688527 /* ContentActionButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095C71CE2BC4A0A700688527 /* ContentActionButtonViewModel.swift */; };
+		095C71D12BC4C4B700688527 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095C71D02BC4C4B700688527 /* Constant.swift */; };
 		097755642BC4400800F8940E /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097755632BC4400800F8940E /* Thread.swift */; };
 		097755672BC4410400F8940E /* CreateThreadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097755662BC4410400F8940E /* CreateThreadViewModel.swift */; };
 		097755692BC4412B00F8940E /* ThreadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097755682BC4412B00F8940E /* ThreadService.swift */; };
@@ -59,6 +60,7 @@
 /* Begin PBXFileReference section */
 		095C71CA2BC4A02700688527 /* ContentActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentActionButtonView.swift; sourceTree = "<group>"; };
 		095C71CE2BC4A0A700688527 /* ContentActionButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentActionButtonViewModel.swift; sourceTree = "<group>"; };
+		095C71D02BC4C4B700688527 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		097755632BC4400800F8940E /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
 		097755662BC4410400F8940E /* CreateThreadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadViewModel.swift; sourceTree = "<group>"; };
 		097755682BC4412B00F8940E /* ThreadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadService.swift; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				09F95BEC2BB624FD00AFDD7F /* ViewModifiers */,
+				095C71D02BC4C4B700688527 /* Constant.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -652,6 +655,7 @@
 				09F17D282BBE2CD9006189E9 /* ProfileHeaderView.swift in Sources */,
 				09F95C052BB62C4500AFDD7F /* ProfileView.swift in Sources */,
 				09F95BEB2BB623FA00AFDD7F /* RegistrationView.swift in Sources */,
+				095C71D12BC4C4B700688527 /* Constant.swift in Sources */,
 				09F95C0F2BB6427600AFDD7F /* ProfileThreadFiler.swift in Sources */,
 				09F17D162BBDD529006189E9 /* User.swift in Sources */,
 				097755692BC4412B00F8940E /* ThreadService.swift in Sources */,
