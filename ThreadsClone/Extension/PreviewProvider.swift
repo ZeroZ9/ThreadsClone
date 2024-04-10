@@ -19,5 +19,5 @@ class DeveloperPreview {
     static let shared = DeveloperPreview()
     
     let user = User(id: UUID().uuidString, fullname: "Max Verstappen", email: "max@gmailc.om", username: "max1")
-    let thread = Thread(ownerUid: "123", caption: "this is a test thread", timestamp: Timestamp(), likes: 0)
+    let thread = Thread(ownerUid: "123", caption: "this is a test thread", timestamp: Timestamp(), likes: 0, replyCount: 0)
 }

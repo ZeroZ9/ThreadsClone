@@ -10,6 +10,9 @@
 		09070E2F2BC2201200F26E8C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 09070E2E2BC2201200F26E8C /* Kingfisher */; };
 		095320DD2BC61724007A8E38 /* ThreadReplyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095320DC2BC61724007A8E38 /* ThreadReplyView.swift */; };
 		095320DF2BC61F69007A8E38 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095320DE2BC61F69007A8E38 /* String.swift */; };
+		095320E22BC62291007A8E38 /* ThreadReply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095320E12BC62291007A8E38 /* ThreadReply.swift */; };
+		095320E52BC62885007A8E38 /* ThreadReplyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095320E42BC62885007A8E38 /* ThreadReplyService.swift */; };
+		095320E72BC6297C007A8E38 /* ThreadReplyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095320E62BC6297C007A8E38 /* ThreadReplyViewModel.swift */; };
 		095C71CB2BC4A02700688527 /* ContentActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095C71CA2BC4A02700688527 /* ContentActionButtonView.swift */; };
 		095C71CF2BC4A0A700688527 /* ContentActionButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095C71CE2BC4A0A700688527 /* ContentActionButtonViewModel.swift */; };
 		095C71D12BC4C4B700688527 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095C71D02BC4C4B700688527 /* Constant.swift */; };
@@ -62,6 +65,9 @@
 /* Begin PBXFileReference section */
 		095320DC2BC61724007A8E38 /* ThreadReplyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadReplyView.swift; sourceTree = "<group>"; };
 		095320DE2BC61F69007A8E38 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		095320E12BC62291007A8E38 /* ThreadReply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadReply.swift; sourceTree = "<group>"; };
+		095320E42BC62885007A8E38 /* ThreadReplyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadReplyService.swift; sourceTree = "<group>"; };
+		095320E62BC6297C007A8E38 /* ThreadReplyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadReplyViewModel.swift; sourceTree = "<group>"; };
 		095C71CA2BC4A02700688527 /* ContentActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentActionButtonView.swift; sourceTree = "<group>"; };
 		095C71CE2BC4A0A700688527 /* ContentActionButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentActionButtonViewModel.swift; sourceTree = "<group>"; };
 		095C71D02BC4C4B700688527 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -127,6 +133,8 @@
 		095320D92BC61704007A8E38 /* ThreadReplies */ = {
 			isa = PBXGroup;
 			children = (
+				095320E32BC6287C007A8E38 /* Service */,
+				095320E02BC62288007A8E38 /* Model */,
 				095320DB2BC6171A007A8E38 /* View */,
 				095320DA2BC61713007A8E38 /* ViewModel */,
 			);
@@ -136,6 +144,7 @@
 		095320DA2BC61713007A8E38 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				095320E62BC6297C007A8E38 /* ThreadReplyViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -146,6 +155,22 @@
 				095320DC2BC61724007A8E38 /* ThreadReplyView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		095320E02BC62288007A8E38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				095320E12BC62291007A8E38 /* ThreadReply.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		095320E32BC6287C007A8E38 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				095320E42BC62885007A8E38 /* ThreadReplyService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		095C71C82BC49FF900688527 /* Threads */ = {
@@ -660,6 +685,7 @@
 				09F17D202BBDF107006189E9 /* PreviewProvider.swift in Sources */,
 				09C33DFB2BC4667100B98C00 /* Timestamp.swift in Sources */,
 				09FE3C4A2BC20E6900D1A665 /* EditProfileViewModel.swift in Sources */,
+				095320E22BC62291007A8E38 /* ThreadReply.swift in Sources */,
 				09F95C132BB6480300AFDD7F /* EditProfileView.swift in Sources */,
 				09F95BD42BB61EA000AFDD7F /* ContentView.swift in Sources */,
 				09F17D182BBDD921006189E9 /* UserService.swift in Sources */,
@@ -683,12 +709,14 @@
 				09F17D242BBE2B0B006189E9 /* CurrentUserProfileView.swift in Sources */,
 				09F95BEE2BB6250F00AFDD7F /* ThreadsTextFieldModifier.swift in Sources */,
 				09F95BF92BB62BC900AFDD7F /* ExploreView.swift in Sources */,
+				095320E52BC62885007A8E38 /* ThreadReplyService.swift in Sources */,
 				09F17D282BBE2CD9006189E9 /* ProfileHeaderView.swift in Sources */,
 				09F95C052BB62C4500AFDD7F /* ProfileView.swift in Sources */,
 				09F95BEB2BB623FA00AFDD7F /* RegistrationView.swift in Sources */,
 				095C71D12BC4C4B700688527 /* Constant.swift in Sources */,
 				09F95C0F2BB6427600AFDD7F /* ProfileThreadFiler.swift in Sources */,
 				09F17D162BBDD529006189E9 /* User.swift in Sources */,
+				095320E72BC6297C007A8E38 /* ThreadReplyViewModel.swift in Sources */,
 				097755692BC4412B00F8940E /* ThreadService.swift in Sources */,
 				095320DD2BC61724007A8E38 /* ThreadReplyView.swift in Sources */,
 			);
