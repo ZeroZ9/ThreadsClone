@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ThreadReplyView: View {
     
-    var thread: Thread
+    let thread: Thread
     @State private var replyText = ""
     @State private var threadViewHeight: CGFloat = 24
     @State var viewModel = ThreadReplyViewModel()

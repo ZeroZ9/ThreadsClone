@@ -9,20 +9,22 @@ import SwiftUI
 
 struct ContentActionButtonView: View {
     
+    let thread: Thread
     @State var viewModel:ContentActionButtonViewModel
     @State private var showReplySheet = false
     
     init(thread: Thread) {
-        self.viewModel = ContentActionButtonViewModel(thread: thread)
+        self.thread = thread
+        self._viewModel = State(wrappedValue: ContentActionButtonViewModel(thread: thread))
     }
     
     private var didLike: Bool {
         return viewModel.thread.didLike ?? false
     }
     
-    private var thread: Thread {
-        return viewModel.thread
-    }
+//    private var thread: Thread {
+//        return viewModel.thread
+//    }
     
     var body: some View {
         VStack(alignment: .leading){
